@@ -145,20 +145,20 @@ export default function Component({ params }: { params: { roomId: string } }) {
   }, [audioInputDevice]);
 
   return (
-    <div className={clsx("flex flex-col h-screen bg-black")}>
+    <div className={clsx("flex flex-col h-screen bg-[#fbf5e5]")}>
       <header className="flex items-center justify-between pt-4 px-4">
-        <h1 className="text-white text-xl font-semibold">Solmates</h1>
+        <h1 className="text-black text-xl font-semibold">Solmates</h1>
         <div className="flex space-x-3">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button className="flex gap-2 bg-gray-600/50 text-gray-200 hover:bg-gray-500/50">
+              <Button className="flex gap-2 my-2 bg-gray-800/50 text-gray-200 hover:bg-gray-500/50">
                 {BasicIcons.invite}
                 Invite
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <div className="flex space-x-2">
-                <span className="p-2 bg-gray-700/50 rounded-lg">
+                <span className="p-2 bg-gray-300/50 rounded-lg">
                   {typeof window !== "undefined" &&
                     `http://${window.location.host}/${params.roomId}`}
                 </span>

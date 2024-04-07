@@ -9,7 +9,7 @@ const ParticipantsBar = () => {
   const { requestedPeers } = useStudioState();
 
   return (
-    <aside className="w-80 bg-gray-800 h-full mr-4 rounded-lg transition-all duration-300 ease-in-out">
+    <aside className="w-80 bg-gray-400 h-full mr-4 rounded-lg transition-all duration-300 ease-in-out">
       <div className="mb-6">
         {requestedPeers.length > 0 && (
           <div className="flex flex-col gap-2">
