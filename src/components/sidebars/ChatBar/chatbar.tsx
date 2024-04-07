@@ -84,8 +84,8 @@ const ChatBar = () => {
   };
 
   return (
-    <div className='flex w-96 rounded-lg mr-4 flex-col h-full bg-gray-800 text-white'>
-      <div className='px-4 py-2 border-b border-gray-700'>
+    <div className='flex w-96 rounded-lg mr-4 flex-col h-full bg-gray-400 text-white'>
+      <div className='px-4 py-2 border-b border-gray-300'>
         <h1 className='text-xl font-semibold'>Chat</h1>
       </div>
       <div className='flex-1 p-2 overflow-y-auto'>
@@ -94,20 +94,20 @@ const ChatBar = () => {
       <div className='p-2 rounded-b-lg'>
         <div className='flex gap-2'>
           <Input
-            className='flex-1 rounded-lg bg-gray-700 text-white placeholder-gray-400'
+            className='flex-1 rounded-lg bg-gray-300 text-black placeholder-black '
             placeholder='Type your message'
             onChange={(e) => setMessage(e.target.value)}
             value={message}
             onKeyDown={handleKeyDown}
           />
           <Button
-            className='bg-gray-700 hover:bg-gray-600 text-gray-200 p-2'
+            className='bg-gray-600 hover:bg-gray-500 text-gray-200 p-2'
             onClick={handleUpload}
           >
             {BasicIcons.upload}
           </Button>
           <Button
-            className='bg-gray-700 hover:bg-gray-600 text-gray-200'
+            className='bg-gray-600 hover:bg-gray-500 text-gray-200'
             onClick={sendMessage}
           >
             {BasicIcons.send}

@@ -112,7 +112,7 @@ const BottomBar = () => {
                 enableAudio();
               }
             }}
-            className='bg-gray-600/50 p-2.5 rounded-lg'
+            className='bg-gray-200/50 p-2.5 rounded-lg'
           >
             {isAudioOn ? BasicIcons.on.mic : BasicIcons.off.mic}
           </button>
@@ -120,7 +120,7 @@ const BottomBar = () => {
         <ChangeDevice deviceType='speaker'>
           <button
             onClick={() => {}}
-            className='bg-gray-600/50 p-2.5 rounded-lg'
+            className='bg-gray-300/50 p-2.5 rounded-lg'
           >
             {BasicIcons.speaker}
           </button>
