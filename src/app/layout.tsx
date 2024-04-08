@@ -5,8 +5,8 @@ import HuddleContextProvider from "@/context/HuddleContextProvider";
 import { Web3Modal } from "@/context/Web3Modal";
 
 export const metadata: Metadata = {
-  title: "Solmates",
-  description: "solmates - connect with your mentors",
+  title: "SOLMATES",
+  description: "Get guidance from your mentors!",
 };
 
 export default function RootLayout({
