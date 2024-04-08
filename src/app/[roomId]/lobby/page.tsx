@@ -81,14 +81,14 @@ const Lobby = ({ params }: { params: { roomId: string } }) => {
   }, [audioInputDevice]);
 
   return (
-    <div className='w-full min-h-screen p-8 flex flex-col items-center justify-center text-gray-200'>
-      <div className='flex justify-center items-center w-full max-w-md p-4 rounded-lg shadow'>
+    <div className='w-full min-h-screen bg-white p-8 flex flex-col items-center justify-center text-gray-200'>
+      <div className='flex justify-center items-center w-full bg-slate-400 max-w-md p-4 rounded-lg shadow'>
         <div className='flex flex-col gap-2'>
           <span className='font-extrabold text-2xl'>
             Let&apos;s check your cam and mic
           </span>
           <Card className='relative p-4 w-full h-full'>
-            <div className='w-full h-full min-w-60 min-h-48 bg-gray-800 rounded-lg'>
+            <div className='w-full h-full min-w-60 min-h-48 bg-gray-300 rounded-lg'>
               {stream && (
                 <Video
                   stream={stream}
